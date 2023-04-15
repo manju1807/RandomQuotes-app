@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7C40FF;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.container{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 600px;
+    height: auto;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50px;
+}
+
+#getbtn {
+    grid-row: 2 / 3; /* position the button in the second row */
+}
+
+button{
+    align-self: center;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to right, #7C40FF 0%, #6E48AA  51%, #9D50BB  100%);
+    margin: 10px;
+    padding: .75rem;
+    width: fit-content;
+    border: none;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 5px 8px 12px #252323;
+    border-radius: 3px;
+    display: block;
+    align-self: center;
+    justify-self: center;
+    transition: all 100ms ease-in-out;
+    touch-action: manipulation;
+}
+    
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    background-position: right center;
+    transform: translate3d(0, 2px, 0);
+}
+    
+button:focus {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#quote{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #1a1717;
+    margin: 10px;
+    margin-top: 10%;
+    justify-self: center;
+    align-content: center;
+}
+
+#author{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color: #1a1717;
+    margin: 10px;
+    justify-self: end;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    /* CSS rules for mobile devices */
+    h1{
+        font-size: 2rem;
+    }
+    .container{
+        width: 90%;
+    }
+  }
+  
+  /* Tablet devices */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for tablet devices */
+    h1{
+        font-size: 2.8rem;
+    }
+    .container{
+        width: 80%;
+    }
+  }
+  
+  /* Desktop devices */
+  @media only screen and (min-width: 992px) {
+    /* CSS rules for desktop devices */
+    h1{
+        font-size: 3rem;
+    }
+    .container{
+        width: 50%;
+    }
+}
